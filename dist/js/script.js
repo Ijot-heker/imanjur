@@ -391,3 +391,32 @@ const statusBencana2 = new Chart(
     document.getElementById('bencana2'),
     configBencana2
 );
+
+// Chart JS Status Perkawinan
+const dataPerkawinan = {
+  labels: [
+    'Kecamatan A',
+    'Kecamatan B',
+    'Kecamatan C'
+  ],
+  datasets: [{
+    label: 'Data Perkawinan',
+    data: [50,300,100],
+    backgroundColor: [
+      'rgb(54, 162, 235)',
+      'rgb(255, 99, 132)',
+      'rgb(255, 205, 86)'
+    ],
+    hoverOffset: 4
+  }]
+};
+
+const configPerkawinan = {
+  type: 'pie',
+  data: dataPerkawinan,
+};
+
+const statusPerkawinan = new Chart(
+    document.getElementById('statusPerkawinan'),
+    configPerkawinan
+  );
